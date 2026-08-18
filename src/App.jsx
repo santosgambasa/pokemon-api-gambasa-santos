@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import PokemonCard from './components/PokemonCard'
 function App() {
   const [pokemonData, setPokemonData] = useState([])
   const BASE_URL = 'https://pokeapi.co/api/v2/pokemon/'
@@ -33,9 +33,10 @@ function App() {
       <h1>POKE API DEMO</h1>
 
       {pokemonData.map((pokemon) => (
-        <p key={pokemon.id}>
-          {pokemon.name}
-        </p>
+        <PokemonCard
+          key={pokemon.id}
+          pokemonData={pokemon}
+        />
       ))}
     </>
   )
