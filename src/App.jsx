@@ -32,12 +32,14 @@ function App() {
     <>
       <h1>POKE API DEMO</h1>
 
+      <div className="pokemon-grid">
       {pokemonData.map((pokemon) => (
         <PokemonCard
           key={pokemon.id}
           pokemonData={pokemon}
         />
       ))}
+      </div>
     </>
   )
 }

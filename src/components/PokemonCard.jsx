@@ -1,14 +1,19 @@
 export default function PokemonCard({ pokemonData }) {
   return (
-    <div>
+    <div className="pokemon-card">
+
       <img
         src={pokemonData.sprites.front_default}
         alt={pokemonData.name}
+        className="pokemon-image"
       />
 
-      <h2>{pokemonData.name}</h2>
+      <h2 className="pokemon-name">
+        {pokemonData.name}
+      </h2>
 
       <p>ID: {pokemonData.id}</p>
+
     </div>
   )
 }
