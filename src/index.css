@@ -20,7 +20,18 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
+.shiny-button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
 
+.shiny-button:hover {
+  background-color: #1e3a8a;
+}
 
 
 
